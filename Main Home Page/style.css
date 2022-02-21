@@ -1,0 +1,293 @@
+/*  CSS FOR NAVBAR  */
+
+.nav-link {
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/*  CSS FOR CHAT CONTAINER  */
+
+.chatwithus {
+    width: 100px !important;
+    margin-left: 1280px !important;
+    border-radius: 50px !important;
+    background-color: #ff9100 !important;
+    color: white !important;
+    display: flex !important;
+    left: 7vw !important;
+}
+
+.chatwithus:hover {
+    color: #ff9100 !important;
+    background-color: WHITE !important;
+}
+
+
+/*  CSS FOR FOOTER CONTAINERS  */
+
+.footer {
+    border-top: 2px solid darkgray;
+}
+
+.footercontainers li a {
+    text-decoration: none;
+}
+
+.footer h5 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/*  CSS FOR SAMSUNG AND OPPO MOBILE CONTAINERS  */
+
+.salescontainer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.discounttag {
+    border-radius: 4px;
+    width: 130px;
+}
+
+.container1 {
+    background-color: white;
+}
+
+.container2 {
+    background-color: white;
+}
+
+
+/*----Animate the heading-----*/
+
+.topsells h2 {
+    animation-duration: 2s;
+    animation-name: slidein;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.category_container {
+    background-color: #f8f9fa;
+}
+
+.accessories_container {
+    background-color: #f8f9fa;
+}
+
+
+/*-----Categories etc container's first container*/
+
+#samsung_container {
+    margin-top: 3rem !important;
+}
+
+
+/*Products Hover Effect in category*/
+
+.categorycards .card {
+    width: 250px;
+    height: 520px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.categorycards .card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.categorycards .card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.categorycards .card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #1b9ce3;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.categorycards .card .pic {
+    position: relative
+}
+
+.categorycards .card .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+.categorycards .card .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    background-color: #1b9ce3;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    transition: all ease
+}
+
+.categorycards .card .date .day {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.categorycards .card .date .month,
+.categorycards .card .date .year {
+    font-size: 10px
+}
+
+.categorycards .card .text-muted {
+    font-size: 12px
+}
+
+.categorycards .card:hover .text-muted {
+    color: #fff !important
+}
+
+.categorycards .card .content {
+    padding: 0 20px
+}
+
+.categorycards .card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #1b9ce3;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.categorycards .card:hover .content .btn {
+    background: #fff;
+    color: #1b9ce3;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+
+/*---Mobile Spec in category--*/
+
+.category_outer_container .row {
+    margin: 0;
+}
+
+
+/*Mobile Specs side features CSS*/
+
+.mobile_specs h2 {
+    color: #4E7DB9;
+}
+
+
+/*Customization of check boxes in features container*/
+
+.form-check .featureslabels:hover,
+.form-check input[type="checkbox"]:hover {
+    color: #ff9100;
+    border-color: #ff9100;
+}
+
+.mobile_specs {
+    margin-top: 10px;
+}
+
+
+/*Making Rating Stars*/
+
+.ratingcontainer .checked {
+    color: orange;
+}
+
+
+/*Page Navigation*/
+
+.pagination {
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+/*Login*/
+
+a {
+    text-decoration: none;
+}
+
+.signupoption {
+    text-align: center;
+}
+
+
+/*Signup page*/
+
+.signupcard {
+    width: 450px;
+    height: 490px;
+    background-color: white;
+    margin-top: 90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
